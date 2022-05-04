@@ -1,5 +1,7 @@
 
-import NavBar from './components/NavBar';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
@@ -8,5 +10,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

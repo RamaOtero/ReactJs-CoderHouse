@@ -10,13 +10,13 @@ function NavBar() {
         sticky="top" expand="sm" collapseOnSelect>
         <Navbar.Brand>
           <img src={logo} width="40px" height="40px" />{' '}
-          Logo
+          Sneakers
         </Navbar.Brand>
 
         <Navbar.Toggle className="coloring" />
         <Navbar.Collapse>
           <Nav>
-            <NavDropdown title="Products">
+            <NavDropdown title="Productos">
               <NavDropdown.Item href="#products/tea">Tea</NavDropdown.Item>
               <NavDropdown.Item href="#products/coffee">Coffee</NavDropdown.Item>
               <NavDropdown.Item href="#products/chocolate">Chocolate</NavDropdown.Item>
@@ -24,8 +24,8 @@ function NavBar() {
               <NavDropdown.Item href="#products/promo">Promo</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#blog">Blog</Nav.Link>
-            <Nav.Link href="#about-us">About Us</Nav.Link>
-            <Nav.Link href="#contact-us">Contact Us</Nav.Link>
+            <Nav.Link href="#about-us">Sobre Nosotros</Nav.Link>
+            <Nav.Link href="#contact-us">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
 
