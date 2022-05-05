@@ -2,6 +2,14 @@
   background-color: crimson;
 }
 
+.carrito {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.carritoIcon {
+  margin-left: 5px;
+}
 .content{
   padding: 12px;
   height: 3000px;

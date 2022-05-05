@@ -1,8 +1,8 @@
 import logo from '../logo.svg';
-import CartWidget from './CartWidget.Js';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import CartWidget from './CartWidget.js'
 
 function NavBar() {
   return (
@@ -29,8 +29,11 @@ function NavBar() {
             <Nav.Link href="#contact-us">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+            <div className="justify-content-end">
+            <Nav.Link href="#"><CartWidget /></Nav.Link>
+            </div>
       </Navbar>
-      
+
       <div className="content">
         This is a content.
       </div>
