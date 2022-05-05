@@ -33,10 +33,6 @@ function NavBar() {
             <Nav.Link href="#"><CartWidget /></Nav.Link>
             </div>
       </Navbar>
-
-      <div className="content">
-        This is a content.
-      </div>
     </div>
   );
 }
