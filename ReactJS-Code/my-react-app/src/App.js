@@ -2,13 +2,15 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import NavBar from './components/NavBar'
-import itemList from './components/itemListContainer'
+import ItemList from './components/itemListContainer'
+import Counter from './components/itemCount'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <itemList greetings="Hola"></itemList>
+      <ItemList greetings="Gracias" />
+      <Counter initial="0" stock="10" />
     </div>
   );
 }
