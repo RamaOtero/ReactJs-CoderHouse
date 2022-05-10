@@ -1,27 +1,39 @@
 import * as React from 'react';
 import {useState} from 'react';
 
-function Counter({stock, initial}){
+const Counter = ({initial, stock}) => {
 
     const [count, setCount] = useState(initial);
-
-    const sumar = () => {
-        setCount(count + 1);
-    }
+    const [bool, setBool] = useState(false);
+    const [frase, setFrase] = useState("")
+    
+    const suma = () => {
+        if ( count == stock) {
+            setBool(false)
+            setFrase("Limite de stock")
+        }else{
+            setCount(count + 1);
+            setFrase("");
+        }
+    };
     const restar = () => {
-        setCount(count - 1);
+        if ( count === 0) {
+            setBool(false)
+            setFrase("No puedes comprar 0 items")
+        }else{
+            setCount(count - 1);
+            setFrase("");
+        }
     }
-
-    if ({count} > stock) {
-        setCount(0)
-    }
-
+    
     return (
 
         <div>
-            <button onClick={sumar}>+</button>
-            {count}
-            <button onClick={restar}>-</button>
+            <button disabled={bool} onClick={suma}>+</button>
+            <p>{count}</p>
+            <button disabled={bool} onClick={restar}>-</button>
+            <button>Add Cart</button>
+            <p>{frase}</p>
         </div>
 
     )

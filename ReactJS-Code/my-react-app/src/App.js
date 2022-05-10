@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <NavBar />
       <ItemList greetings="Gracias" />
-      <Counter initial="0" stock="10" />
+      <Counter initial="1" stock="10" />
     </div>
   );
 }
