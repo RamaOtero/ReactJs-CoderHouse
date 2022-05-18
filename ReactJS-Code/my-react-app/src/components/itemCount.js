@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {useState} from 'react';
+import '../App.css';
 
 const Counter = ({initial, stock}) => {
 
@@ -28,11 +29,15 @@ const Counter = ({initial, stock}) => {
     
     return (
 
-        <div>
-            <button disabled={bool} onClick={suma}>+</button>
-            <p>{count}</p>
-            <button disabled={bool} onClick={restar}>-</button>
+        <div className= 'counter' >
+            <div>
+                <div className='counterNumero'>
+                <button disabled={bool} onClick={suma}>+</button>
+                <p>{count}</p>
+                <button disabled={bool} onClick={restar}>-</button>
+                </div>
             <button>Add Cart</button>
+            </div>
             <p>{frase}</p>
         </div>
 

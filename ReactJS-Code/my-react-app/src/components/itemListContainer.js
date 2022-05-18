@@ -5,8 +5,6 @@ import ItemList from './itemList';
 
 const ItemListContainer = ({greetings}) => {
     const [items, setItems] = useState([]);
-    const [loading, setLoading] = useState(true);
-
 
     useEffect(() => {
         setTimeout (() => {
@@ -19,15 +17,12 @@ const ItemListContainer = ({greetings}) => {
         data.catch((err) => {
             console.log(err);
         });
-        data.finally(() => {
-            setLoading(false)
-        });
       }, 2000);
      }, []);
 
        return (
            <div>
-               <h1> Galeria de Arte {greetings} </h1>
+               <h1> Hoodies {"| Overzise"} </h1>
                <ItemList items={items} />
            </div>
        );

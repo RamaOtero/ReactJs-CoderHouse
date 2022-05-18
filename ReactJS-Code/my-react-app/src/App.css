@@ -2,10 +2,24 @@
   background-color: crimson;
 }
 
+.itemImg {
+  width: 150px;
+}
+.counter {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.counterNumero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .containerDetail {
  display: flex;
  align-items: center;
- justify-content: start;
+ justify-content: flex-start;
 }
 
 .item-list {
