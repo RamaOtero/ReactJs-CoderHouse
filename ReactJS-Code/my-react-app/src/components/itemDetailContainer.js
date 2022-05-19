@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ItemDetail from './ItemDetail';
 import { traerProducto } from './productos';
-import Counter from './itemCount';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState({})
@@ -17,7 +16,6 @@ const ItemDetailContainer = () => {
     return (
         <div>
             <ItemDetail product={product} />
-            <Counter initial="1" stock="10" />
         </div>
     )
 

@@ -1,17 +1,23 @@
+import img1 from './Assets/merch/hoodie1.jpg'
+import img2 from './Assets/merch/hoodie2.jpg'
+import img3 from './Assets/merch/hoodie3.jpg'
+import img4 from './Assets/merch/hoodie4.jpg'
+import img5 from './Assets/merch/hoodie5.jpg'
+
 export const prod = [
-    {id: 1, name: "Producto 1", price: 100, image: './Assets/merch/hoodie1.jpg'},
-    {id: 1, name: "Producto 2", price: 200, image: './Assets/merch/hoodie2.jpg'},
-    {id: 1, name: "Producto 3", price: 300, image: './Assets/merch/hoodie3.jpg'},
-    {id: 1, name: "Producto 4", price: 400, image: './Assets/merch/hoodie4.jpg'},
-    {id: 1, name: "Producto 5", price: 500, image: './Assets/merch/hoodie5.jpg'},
+    {id: 1, name: "Hoodie Black ASSC", price: 9000, image: img1},
+    {id: 1, name: "Hoodie White", price: 8000, image: img2},
+    {id: 1, name: "Joggin Suit", price: 7500, image: img3},
+    {id: 1, name: "Hoodie Pink", price: 8500, image: img4},
+    {id: 1, name: "Hoodie Grey", price: 10000, image: img5},
 ]
 
 const product = {
-    name: "Producto 1",
-    price: 100,
+    name: "Hoodie Black Anti Social Social Club",
+    price: 9000,
     stock: 5,
     id: 44,
-    image: './Asset/merch/hoodie1.jpg',
+    image: img1,
     category: "Arte",
     discount: 5,
     info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel consectetur lacus, eget posuere lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et.",

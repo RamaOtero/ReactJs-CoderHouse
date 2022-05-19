@@ -32,11 +32,11 @@ const Counter = ({initial, stock}) => {
         <div className= 'counter' >
             <div>
                 <div className='counterNumero'>
-                <button disabled={bool} onClick={suma}>+</button>
+                <button disabled={bool} onClick={suma} className='counterBttn'>+</button>
                 <p>{count}</p>
-                <button disabled={bool} onClick={restar}>-</button>
+                <button disabled={bool} onClick={restar} className='counterBttn'>-</button>
                 </div>
-            <button>Add Cart</button>
+            <button className='counterBttn'>Add Cart</button>
             </div>
             <p>{frase}</p>
         </div>

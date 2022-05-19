@@ -22,7 +22,7 @@ const ItemListContainer = ({greetings}) => {
 
        return (
            <div>
-               <h1> Hoodies {"| Overzise"} </h1>
+               <h1> Hoodies {greetings} </h1>
                <ItemList items={items} />
            </div>
        );
