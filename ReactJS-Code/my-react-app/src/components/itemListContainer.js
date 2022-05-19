@@ -1,7 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { prod } from './productos';
+import { prod, traerProducto } from './productos';
 import ItemList from './itemList';
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({greetings}) => {
     const [items, setItems] = useState([]);
