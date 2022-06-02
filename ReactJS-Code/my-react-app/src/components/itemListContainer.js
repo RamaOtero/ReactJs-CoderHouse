@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { prod, traerProducto } from './productos';
 import ItemList from './itemList';
 import { useParams } from "react-router-dom";
+import "../App.css";
 
 const ItemListContainer = ({greetings}) => {
     const [items, setItems] = useState([]);
@@ -22,7 +23,7 @@ const ItemListContainer = ({greetings}) => {
      }, []);
 
        return (
-           <div>
+           <div className="itemListContainer">
                <h1> Hoodies {greetings} </h1>
                <ItemList items={items} />
            </div>

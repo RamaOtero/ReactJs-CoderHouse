@@ -1,6 +1,8 @@
-import React from "react";
+
 import '../App.css';
-import Counter from './itemCount';
+import Counter from './itemCount2';
+import * as React from 'react';
+
 
 const ItemDetail = ({ product }) => {
     return (
@@ -12,7 +14,9 @@ const ItemDetail = ({ product }) => {
                 <h3>{product.name}</h3>
                 <h4>${product.price}</h4>
                 <h5>{product.info}</h5>
-                <Counter initial="1" stock="10" />
+                <div>
+                <Counter initial="0" stock="10" />
+                </div>
             </div>
         </div>
     )

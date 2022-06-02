@@ -28,7 +28,7 @@ export const traerProducto = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(product);
-        }, 1000);
+        },);
     });
 };
 
